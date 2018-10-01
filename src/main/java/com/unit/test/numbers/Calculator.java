@@ -1,4 +1,4 @@
-package com.unit.test;
+package com.unit.test.numbers;
 
 public class Calculator {
     public static int add(int i, int i1) {
@@ -21,7 +21,7 @@ public class Calculator {
      * @throws ArithmeticException
      */
     public static double div(double v, double v1)  {
-        System.out.print("com.unit.test.Calculator.div");
+        System.out.print("com.unit.test.numbers.Calculator.div");
         System.out.print(": {v = " + v);
         System.out.print(", v1 = " + v1);
         double result = v/v1;
