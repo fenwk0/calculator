@@ -1,6 +1,6 @@
 package com.unit.test.food;
 
-public class Egg {
+public class Egg extends Ingredient {
     boolean fried = false;
 
     public void fry() {

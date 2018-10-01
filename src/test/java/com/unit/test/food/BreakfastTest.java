@@ -42,6 +42,17 @@ public class BreakfastTest {
         assertTrue(egg.isFried());
     }
 
+    @Test
+    public void test_Chef_Can_Fry_An_Egg_Ingredient() throws Exception {
+        System.out.println("BreakfastTest.test_Chef_Can_Fry_An_Egg_Ingredient");
+
+        Breakfast breakfast = new Breakfast();
+        Ingredient ingredient = new Egg();
+        Chef chef = new Chef();
+        chef.fry(ingredient);
+
+        assertTrue(((Egg)ingredient).isFried());
+    }
     @AfterEach
     void tearDown() {
     }
