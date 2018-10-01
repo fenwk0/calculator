@@ -1,7 +1,5 @@
-package com.unit.test;
+package com.unit.test.food;
 
-import com.unit.test.Breakfast;
-import com.unit.test.Egg;
 import org.junit.Test;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
@@ -20,7 +18,7 @@ public class BreakfastTest {
     public void test_Eggs_Is_Fried() throws Exception {
         System.out.println("BreakfastTest.test_Eggs_Is_Fried");
 
-        // com.unit.test.Egg
+        // com.unit.test.food.Egg
         // Fry
         // Check for state change
         Breakfast breakfast = new Breakfast();
@@ -33,7 +31,7 @@ public class BreakfastTest {
     public void test_Chef_Can_Fry_An_Egg() throws Exception {
         System.out.println("BreakfastTest.test_Chef_Can_Fry_An_Egg");
 
-        // com.unit.test.Egg
+        // com.unit.test.food.Egg
         // Fry
         // Check for state change
         Breakfast breakfast = new Breakfast();
