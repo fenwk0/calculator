@@ -1,6 +1,10 @@
 # calculator
 
-This a simple TDD Unit Test example.
+This is a simple TDD Unit Test example it has a couple of examples
+* Calculator
+* Food
+* Fixtures
+
 
 It uses : 
 * JUnit 4.x
