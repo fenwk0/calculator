@@ -50,6 +50,16 @@ public class CalculatorTest {
         }
     }
 
+    @Test (expected = java.lang.ArithmeticException.class)
+    public void test_divide_by_zero() {
+        System.out.println("CalculatorTest.test_divide");
+        double numberUnderTest = 12.0;
+        try {
+            assertThat(Calculator.div(24.0,0.0), is(numberUnderTest));
+        } catch (Exception e) {
+            Assert.fail("Test failed : " + e.getMessage());
+        }
+    }
     @AfterEach
     void tearDown() {
     }
