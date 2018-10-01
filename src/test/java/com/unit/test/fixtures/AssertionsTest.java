@@ -1,4 +1,4 @@
-package com.unit.test;
+package com.unit.test.fixtures;
 
 import org.junit.Test;
 
@@ -24,10 +24,8 @@ public class AssertionsTest {
 
         assertEquals(string1, string2);
         assertTrue(val1 < val2);
-        assertTrue(val1 > val2);
         assertNotNull(string1);
         assertNull(string3);
-        assertSame(string1,string2);
     }
 
 }

@@ -1,4 +1,4 @@
-package com.unit.test;
+package com.unit.test.fixtures;
 
 import org.junit.*;
 
@@ -6,7 +6,7 @@ import java.util.ArrayList;
 
 import static junit.framework.TestCase.assertTrue;
 
-public class TestFixture1 {
+public class TestFixture2 {
 
     private static ArrayList<String> collection;
 
@@ -24,7 +24,7 @@ public class TestFixture1 {
     @Test
     public void test_Collection_Is_Empty() throws Exception {
         assertTrue(collection.isEmpty());
-        System.out.println("TestFixture1.test_Collection_Is_Empty");
+        System.out.println("TestFixture2.test_Collection_Is_Empty");
     }
 
     @After
