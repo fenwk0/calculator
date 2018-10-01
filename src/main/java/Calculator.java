@@ -7,11 +7,23 @@ public class Calculator {
         return i-i1;
     }
 
-    public static float mul(double v, double v1) throws Exception {
-        throw new Exception("Not implemented");
+    public static double mul(double v, double v1)  {
+        return v * v1;
     }
 
-    public static float div(double v, double v1) throws Exception {
-        throw new Exception("Not implemented");
+    /**
+     * Double precision division returns infinity and does not throw Divide By Zero (unbeleivably!)
+     * @param v
+     * @param v1
+     * @return result
+     * @throws ArithmeticException
+     */
+    public static double div(double v, double v1)  {
+        System.out.print("Calculator.div");
+        System.out.print(": {v = " + v);
+        System.out.print(", v1 = " + v1);
+        double result = v/v1;
+        System.out.println(", result = " + result +"}");
+        return result;
     }
 }
