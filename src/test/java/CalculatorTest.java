@@ -1,3 +1,5 @@
+import junit.framework.AssertionFailedError;
+import org.junit.Assert;
 import org.junit.Test;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
@@ -26,18 +28,26 @@ public class CalculatorTest {
     }
 
     @Test
-    public void test_multiply(){
+    public void test_multiply()  {
         System.out.println("CalculatorTest.test_multiply");
         double numberUnderTest = 12.0;
-        assertThat(Calculator.mul(6.0,2.0), is(numberUnderTest));
+        try {
+            assertThat(Calculator.mul(6.0,2.0), is(numberUnderTest));
+        } catch (Exception e) {
+            Assert.fail("Test failed : " + e.getMessage());
+        }
     }
 
 
     @Test
-    public void test_divide(){
+    public void test_divide() {
         System.out.println("CalculatorTest.test_divide");
         double numberUnderTest = 12.0;
-        assertThat(Calculator.div(24.0,2.0), is(numberUnderTest));
+        try {
+            assertThat(Calculator.div(24.0,2.0), is(numberUnderTest));
+        } catch (Exception e) {
+            Assert.fail("Test failed : " + e.getMessage());
+        }
     }
 
     @AfterEach
