@@ -17,14 +17,30 @@ public class BreakfastTest {
     }
 
     @Test
-    public void test_Egss_Is_Fried() throws Exception {
+    public void test_Eggs_Is_Fried() throws Exception {
+        System.out.println("BreakfastTest.test_Eggs_Is_Fried");
 
         // com.unit.test.Egg
         // Fry
         // Check for state change
         Breakfast breakfast = new Breakfast();
         Egg egg = new Egg();
-        egg.fry(egg);
+        egg.fry();
+        assertTrue(egg.isFried());
+    }
+
+    @Test
+    public void test_Chef_Can_Fry_An_Egg() throws Exception {
+        System.out.println("BreakfastTest.test_Chef_Can_Fry_An_Egg");
+
+        // com.unit.test.Egg
+        // Fry
+        // Check for state change
+        Breakfast breakfast = new Breakfast();
+        Egg egg = new Egg();
+        Chef chef = new Chef();
+        chef.fry(egg);
+
         assertTrue(egg.isFried());
     }
 
