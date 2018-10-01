@@ -1,3 +1,5 @@
+package com.unit.test;
+
 public class Egg {
     boolean fried = false;
 

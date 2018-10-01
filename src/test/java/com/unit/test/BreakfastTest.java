@@ -1,3 +1,7 @@
+package com.unit.test;
+
+import com.unit.test.Breakfast;
+import com.unit.test.Egg;
 import org.junit.Test;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
@@ -12,12 +16,10 @@ public class BreakfastTest {
     void setUp() {
     }
 
-
-
     @Test
     public void test_Egss_Is_Fried() throws Exception {
 
-        // Egg
+        // com.unit.test.Egg
         // Fry
         // Check for state change
         Breakfast breakfast = new Breakfast();

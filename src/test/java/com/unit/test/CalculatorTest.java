@@ -1,4 +1,6 @@
-import junit.framework.AssertionFailedError;
+package com.unit.test;
+
+import com.unit.test.Calculator;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.jupiter.api.AfterEach;
@@ -16,21 +18,21 @@ public class CalculatorTest {
 
     @Test
     public void test_addition() {
-        System.out.println("CalculatorTest.test_addition");
+        System.out.println("com.unit.test.CalculatorTest.test_addition");
         int numberUnderTest = 4;
         assertThat(Calculator.add(2, 2), is(numberUnderTest));
     }
 
     @Test
     public void test_subtraction() {
-        System.out.println("CalculatorTest.test_subtraction");
+        System.out.println("com.unit.test.CalculatorTest.test_subtraction");
         int numberUnderTest = 4;
         assertThat(Calculator.sub(6, 2), is(numberUnderTest));
     }
 
     @Test
     public void test_multiply() {
-        System.out.println("CalculatorTest.test_multiply");
+        System.out.println("com.unit.test.CalculatorTest.test_multiply");
         double numberUnderTest = 12.0;
         try {
             assertThat(Calculator.mul(6.0, 2.0), is(numberUnderTest));
@@ -42,7 +44,7 @@ public class CalculatorTest {
 
     @Test
     public void test_divide() {
-        System.out.println("CalculatorTest.test_divide");
+        System.out.println("com.unit.test.CalculatorTest.test_divide");
         double numberUnderTest = 12;
         try {
             assertThat(Calculator.div(24, 2), is(numberUnderTest));
@@ -54,7 +56,7 @@ public class CalculatorTest {
     //@Test(expected = ArithmeticException.class)
     @Test
     public void test_divide_by_zero() {
-        System.out.println("CalculatorTest.test_divide_by_zero");
+        System.out.println("com.unit.test.CalculatorTest.test_divide_by_zero");
         double result = Calculator.div(24, 0);
         assertThat( Double.isInfinite(result), is(true));
     }
