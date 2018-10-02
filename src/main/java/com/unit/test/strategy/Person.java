@@ -6,6 +6,20 @@ public class Person {
 
     private WorkBehavior workBehavior;
 
+    private int age;
+
+    public Person(int age) {
+        this.age = age;
+    }
+
+    public Boolean isAdult() {
+        boolean adult = false;
+        if(age >= 18) {
+            adult = true;
+        }
+        return adult;
+    }
+
     public Person(){
         workBehavior = new HomeWorkBehavior();
     }
@@ -18,4 +32,5 @@ public class Person {
 
         this.workBehavior = workBehavior;
     }
+
 }
