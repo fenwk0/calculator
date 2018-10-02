@@ -10,4 +10,12 @@ It uses :
 * JUnit 4.x
 * Hamcrest (An anagram of Matchers) https://code.google.com/archive/p/hamcrest/wikis/Tutorial.wiki
 
+##Usefull links
+
+#### Mocks vs Stubs 
+* https://martinfowler.com/articles/mocksArentStubs.html
+* https://stackoverflow.com/questions/3459287/whats-the-difference-between-a-mock-stub
+
+### Lombock 
+* https://projectlombok.org/
 
